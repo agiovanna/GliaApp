@@ -33,9 +33,9 @@ export const Content = styled.ScrollView.attrs({
 export const Title = styled.Text` 
     font-size: 32px;
     align-self: self-start;
-    margin-bottom: 24px ;
+    margin-bottom: 25px ;
     font-weight: bold;
-    margin-top: 32px;
+    margin-top: 25px;
     margin-left: 25px;
     ${({theme}) => css`
         color: ${theme.COLORS.DARKBLUE};
@@ -45,9 +45,9 @@ export const Title = styled.Text`
 export const Logo =  styled.Image.attrs({
     resizeMode: 'contain'
 })`
-    height: 120px;
-    margin-top: 45px;
-    margin-bottom: 32px
+    height: 100px;
+    margin-top: 35px;
+    margin-bottom: 35px
 `;
 
 export const ForgotPasswordButton = styled.TouchableOpacity`
@@ -78,3 +78,7 @@ export const CreateAcountButton = styled.TouchableOpacity`
     margin-bottom: 10px;
     margin-top: 20px;
 ` ;
+
+export const Container = styled.View`
+    width: 85%;
+`;
