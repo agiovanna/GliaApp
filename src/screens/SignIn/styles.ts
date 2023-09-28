@@ -78,3 +78,7 @@ export const CreateAcountButton = styled.TouchableOpacity`
     margin-bottom: 10px;
     margin-top: 20px;
 ` ;
+
+export const Container = styled.View`
+    width: 85%;
+`;

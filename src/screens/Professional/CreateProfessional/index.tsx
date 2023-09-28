@@ -8,13 +8,14 @@ import {
     Screen,
     Content,
     Title,
-    Logo, 
+    Logo,
+    Container,
     ForgotPasswordButton,
     ForgotPasswordLabel,
     CreateAcountButton,
     CreateAcountLabel
 } from './styles';
-import logoImg from '../../assets/img/white-icon.png';
+import logoImg from '../../../assets/img/white-icon.png';
 import {Input} from '../../../components/Input';
 import { Button } from '../../../components/Button';
 
@@ -30,10 +31,38 @@ export function CreateProfessional(){
     return(
    
         <Screen>
+        <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? "padding" : undefined}/>
+        
+        <Content>
+        
+        <Logo source={logoImg}/>
             <Form>
-                
-                <Input> </Input>
+            <Container>
+            <Title> Criar conta </Title>
+
+            <Input placeholder='Nome*' type='primary'/>
+
+            <Input placeholder='Nome fantasia (Opcional) ' type='primary'/>
+
+            <Input placeholder='CPF*' type='primary'/>
+            
+            <Input placeholder='CNPJ (Opcional)' type='primary'/>
+
+            <Input placeholder='Data de Nascimento*' type='primary'/>
+
+            <Input placeholder='Número de telefone*' type='primary'/>
+
+            <Input placeholder='Email*' type='primary'/>
+
+            <Input placeholder='Endereço' type='primary'/>
+
+
+
+            <Button title='Continuar' type='primary'/>
+
+</Container>
             </Form>
+            </Content>
         </Screen>
         
     );
