@@ -10,10 +10,6 @@ import {
     Title,
     Logo,
     Container,
-    ForgotPasswordButton,
-    ForgotPasswordLabel,
-    CreateAcountButton,
-    CreateAcountLabel
 } from './styles';
 import logoImg from '../../../assets/img/white-icon.png';
 import {Input} from '../../../components/Input';
