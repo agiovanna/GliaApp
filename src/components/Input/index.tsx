@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {InputText, TypeProps} from './styles'
 import {TextInputProps} from 'react-native';
 
@@ -6,6 +6,7 @@ import {TextInputProps} from 'react-native';
 type Props = TextInputProps &{
     //Definir o tipo será opcional, caso não seja definido o tipo do input, seu padrão será primary (personalização)
     type?: TypeProps;
+    name?: string
 
 }
 

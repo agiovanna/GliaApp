@@ -33,7 +33,7 @@ export function SignIn() {
             <Title> Login </Title>
             <Input placeholder="Digite seu email" type="primary" />
 
-            <Input placeholder="Digite sua senha" type="primary" />
+            <Input placeholder="Digite sua senha" type="primary" secureTextEntry />
 
             <ForgotPasswordButton>
               <ForgotPasswordLabel> Esqueceu sua senha? </ForgotPasswordLabel>
