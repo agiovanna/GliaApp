@@ -16,7 +16,7 @@ export default function App() {
       {/*<CreateClient/>*/}
       {/*<Home/>*/}
       {/*<SignUpProfessional4/>*/}
-      <SignUpProfessional4/>
+      <SignUpProfessional/>
     </ThemeProvider>
 
   );

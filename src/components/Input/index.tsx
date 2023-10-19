@@ -6,7 +6,8 @@ import {TextInputProps} from 'react-native';
 type Props = TextInputProps &{
     //Definir o tipo será opcional, caso não seja definido o tipo do input, seu padrão será primary (personalização)
     type?: TypeProps;
-    name?: string
+    name?: string;
+    onPress? :string;
 
 }
 
