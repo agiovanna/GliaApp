@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react-native';
 import {RectButtonProps} from 'react-native-gesture-handler';
 
 import {ButtonT, Title, Load, TypeProps} from './styles';

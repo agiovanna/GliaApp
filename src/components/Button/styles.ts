@@ -2,7 +2,7 @@ import styled  from "styled-components/native";
 import {RectButton} from 'react-native-gesture-handler';
 import theme from "src/theme/theme";
 
-export type TypeProps = 'primary' | 'secondary';
+export type TypeProps = 'primary' | 'secondary' | 'terciary';
 
 type ButtonProps = {
     type? : TypeProps;
@@ -18,12 +18,22 @@ export const ButtonT = styled(RectButton)<ButtonProps>`
     align-items: center;
     margin-top: 24px;
     
-    background-color: ${({theme, type}) => type === 'primary' ? theme.COLORS.DARKBLUE : theme.COLORS.YELLOW};
+    background-color: ${({theme, type}) => {
+        switch (type) {
+            case 'primary':
+                return theme.COLORS.VIOLET;
+            case 'secondary': 
+                return theme.COLORS.YELLOW;
+            case   'terciary':
+                return theme.COLORS.PURPLE;
+        }
+    }};
 `;
 
 export const Title = styled.Text`
-    font-size: 14px;
+    font-size: 18px;
     color: ${theme.COLORS.WHITE};
+    font-weight: 600;
 
 `;
 

@@ -1,9 +1,17 @@
-import React from 'react'
-import {HeaderV} from './styles';
+import React from 'react-native'
+import {HeaderV, HeaderLabel} from './styles';
 
-export function Header(){
+type Props = {
+    title: string;
+}
+
+export function Header({title}: Props){
+
     return(
-        <Header/>
+        <HeaderV>
+            <HeaderLabel> {title} </HeaderLabel> 
+        </HeaderV>
     );
 }
+
 

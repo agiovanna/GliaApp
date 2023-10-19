@@ -33,7 +33,7 @@ export const Content = styled.ScrollView.attrs({
 export const Title = styled.Text` 
     font-size: 32px;
     align-self: self-start;
-    margin-bottom: 24px ;
+    margin-bottom: 30px ;
     font-weight: bold;
     margin-top: 32px;
     margin-left: 25px;
@@ -77,6 +77,7 @@ export const CreateAcountLabel = styled.Text`
 export const CreateAcountButton = styled.TouchableOpacity`
     margin-bottom: 10px;
     margin-top: 20px;
+    align-self: center;
 ` ;
 
 export const Container = styled.View`
