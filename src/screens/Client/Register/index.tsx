@@ -11,7 +11,7 @@ export function CreateClient() {
     const [cpf, setCPF] = useState<string>('');
     const [isValid, setIsValid] = useState<boolean>(false);
   
-    const handleVerifyCPF = () => {
+    const handleSignUp = () => {
       setIsValid(isValidCPF(cpf));
     };
 
@@ -24,11 +24,11 @@ export function CreateClient() {
             <Container>
               <Title> Criar conta </Title>
               <Input placeholder='Nome*' type='primary' name='name'/>
-              <Input placeholder='CPF*' type='primary' name='cpf' keyboardType='numeric'/>
+              <Input placeholder='CPF*' type='primary' name='cpf' keyboardType='numeric' />
               <Input placeholder='Data de Nascimento*' type='primary' name='dateBirth'/>
               <Input placeholder='Número de telefone*' type='primary' name='phone' />
               <Input placeholder='Email*' type='primary' name='email' keyboardType='numeric' />
-              <Button title='Continuar' type='primary' onPress={handleVerifyCPF} />
+              <Button title='Continuar' type='primary' onPress={handleSignUp} />
               <LoginButton>
                 <LoginLabel> Já possui conta? Clique aqui.</LoginLabel>
               </LoginButton>
