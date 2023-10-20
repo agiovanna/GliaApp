@@ -33,6 +33,8 @@ export function SignUpProfessional2() {
 
           <Input name="city" placeholder="Cidade*" type="primary" />
 
+          <Input name="neighbourhood" placeholder="Bairro*" type="primary"/>
+
           <Input name="street" placeholder="Rua*" type="primary" />
 
           <Input name="number" placeholder="Número*" type="primary" />
