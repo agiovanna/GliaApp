@@ -22,7 +22,7 @@ export function clientUser({ navigation, route }: { navigation: any, route: any 
         try{
         RegisterFirebaseandSendEmail(email,password);
 
-        navigation.navigate('emailValidation', {
+        navigation.navigate('clientValidation', {
             name,
             birthDate,
             telephone,

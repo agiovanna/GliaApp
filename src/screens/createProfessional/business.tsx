@@ -23,7 +23,7 @@ export function Business({ navigation, route }: { navigation: any, route: any })
 
     function DataBusiness() {
 
-        navigation.navigate('user', {
+        navigation.navigate('professionalUser', {
             name,
             birthDate,
             telephone,

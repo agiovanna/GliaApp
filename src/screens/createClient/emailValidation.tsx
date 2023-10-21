@@ -2,7 +2,7 @@ import { Button, View, StyleSheet, Text, Platform } from "react-native";
 import verificationEmail  from "../../utils/emailValidation/verifyValidation";
 import { createUserClient } from "../../api/createClient";
 
-export function VerificationEmail({ route }: { route: any }) {
+export function clientValidation({ route }: { route: any }) {
 
     async function Verification() {
 

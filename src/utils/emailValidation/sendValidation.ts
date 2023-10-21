@@ -12,14 +12,13 @@ import { Alert } from "react-native";
             if (user) {
                 //send a email verification
                 await sendEmailVerification(user)
-                Alert.alert('Informação', `Foi enviado um email para ${email} para verificação.`);
+                Alert.alert('Informação', `Foi enviado um e-mail para ${email} para verificação.`);
             }
             else {
-                console.log('Informação', 'Erro ao criar usuário no Firebase');
+                console.log('Informação', 'Erro ao procurar usuário no Firebase.');
             }
         }
         catch (error) {
-            console.error('Erro ao criar o usuário:', error);
-            Alert.alert('Informação', 'Erro ao criar o usuário.');
+            console.error('Erro ao criar o usuário no Firebase:', error);
         }
     }

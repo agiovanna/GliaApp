@@ -5,7 +5,7 @@ import firebaseAuth from "../../api/firebase/firebaseConfig";
 import { RegisterFirebaseandSendEmail } from "../../utils/emailValidation/sendValidation";
 
 
-export function User({ navigation, route }: { navigation: any, route: any }) {
+export function professionalUser({ navigation, route }: { navigation: any, route: any }) {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

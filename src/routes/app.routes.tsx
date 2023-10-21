@@ -1,9 +1,12 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Adress } from "../screens/createProfessional/adress";
+import { professionalAdress } from "../screens/createProfessional/adress";
 import { Business } from "../screens/createProfessional/business";
-import { PersonalData } from "../screens/createProfessional/personalData";
-import { User } from "../screens/createProfessional/user";
-import { VerificationEmail } from "../screens/createProfessional/emailValidation";
+import { professionalData } from "../screens/createProfessional/personalData";
+import { professionalUser } from "../screens/createProfessional/user";
+import { professionalValidation } from "../screens/createProfessional/emailValidation";
+import { clientData } from "../screens/createClient/personalData";
+import {clientUser} from "../screens/createClient/user";
+import {clientValidation} from "../screens/createClient/emailValidation";
 
 
 const { Navigator, Screen } = createNativeStackNavigator();
@@ -11,14 +14,16 @@ const { Navigator, Screen } = createNativeStackNavigator();
 export function AppRoutes() {
     return (
         <Navigator screenOptions={{ headerShown: false }}>
+
+            {/* professional screens */}
             <Screen
-                name='personalData'
-                component={PersonalData}
+                name='professionalData'
+                component={professionalData}
             />
 
             <Screen
-                name='adress'
-                component={Adress}
+                name='professionalAdress'
+                component={professionalAdress}
             />
 
             <Screen
@@ -27,13 +32,29 @@ export function AppRoutes() {
             />
 
             <Screen
-                name='user'
-                component={User}
+                name='professionalUser'
+                component={professionalUser}
             />
 
             <Screen
-                name='verificationEmail'
-                component={VerificationEmail}
+                name='professionalValidation'
+                component={professionalValidation}
+            />
+
+            {/* client screens */}
+            <Screen
+                name='clientData'
+                component={clientData}
+            />
+
+            <Screen
+                name='clientUser'
+                component={clientUser}
+            />
+
+            <Screen
+                name='clientValidation'
+                component={clientValidation}
             />
         </Navigator>
     );

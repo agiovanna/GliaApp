@@ -1,7 +1,7 @@
 import { Button, View, StyleSheet, Text, TextInput, Platform } from "react-native";
 import { useState } from 'react';
 
-export function Adress({ navigation, route }: { navigation: any, route: any }) {
+export function professionalAdress({ navigation, route }: { navigation: any, route: any }) {
 
     const {
         name,

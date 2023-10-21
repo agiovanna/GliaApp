@@ -2,10 +2,10 @@ import { Button, View, StyleSheet, Text, TextInput, Platform } from "react-nativ
 import { useState } from 'react';
 
 
-export function PersonalData({ navigation }: { navigation: any }) {
+export function professionalData({ navigation }: { navigation: any }) {
 
     function Data() {
-        navigation.navigate('adress', {
+        navigation.navigate('professionalAdress', {
             name,
             birthDate,
             telephone,

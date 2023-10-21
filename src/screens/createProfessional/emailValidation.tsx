@@ -2,7 +2,7 @@ import { Button, View, StyleSheet, Text, Platform } from "react-native";
 import { createUserProfessional } from "../../api/createProfessional";
 import verificationEmail  from "../../utils/emailValidation/verifyValidation";
 
-export function VerificationEmail({ route }: { route: any }) {
+export function professionalValidation({ route }: { route: any }) {
 
     async function Verification() {
 

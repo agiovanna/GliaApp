@@ -10,11 +10,11 @@ import { Alert } from "react-native";
 
     //verify if the verification was concluded
     if (!user.emailVerified) {
-        Alert.alert('Informação', 'Verifique seu e-mail para cadastrar seu usuário!!!');
+        Alert.alert('Informação', 'Você deve verificar seu e-mail.');
         return
     }
 
-    Alert.alert('E-mail verificado com sucesso!!!!!');
+    Alert.alert('Informação','E-mail verificado com sucesso!');
 }
 
 export default verificationEmail;
