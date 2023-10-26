@@ -19,7 +19,7 @@ import logoImg from "../../../../assets/img/white-icon.png";
 import { Input } from "../../../../components/Input";
 import { Button } from "../../../../components/Button";
 
-export function SignUpProfessional() {
+export function SignUpProfessional1() {
   return (
     <Screen>
       <KeyboardAvoidingView
