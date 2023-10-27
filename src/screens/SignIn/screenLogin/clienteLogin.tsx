@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Text, TextInput, Button, Alert, View } from 'react-native';
-import { api } from '../../lib/axios';
+import { api } from '../../../lib/axios';
 
 export function ClientLogin() {
   const [email, setEmail] = useState('');
