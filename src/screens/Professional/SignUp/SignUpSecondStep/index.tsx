@@ -3,6 +3,7 @@ import { Header } from "src/components/Header";
 import { Button } from "src/components/Button";
 import { Input } from "src/components/Input";
 import { useState } from "react";
+import {SearchCEP} from 'src/services/viacep';
 
 import { Screen, Content, Container, SubTitle } from "./styles";
 
@@ -15,7 +16,17 @@ export function SignUpProfessional2({
   navigation: any;
   route: any;
 }) {
+
+  const [state, setState] = useState("");
+  const [city, setCity] = useState("");
+  const [cep, setCep] = useState("");
+  const [neighborhood, setNeighborhood] = useState("");
+  const [street, setStreet] = useState("");
+  const [numberHome, setNumberHome] = useState("");
+  const [complement, setComplement] = useState("");
+
   const { name, birthDate, telephone, cpf } = route.params;
+
 
   function DataAdress() {
     navigation.navigate("SignUpProfessional3", {
@@ -33,13 +44,19 @@ export function SignUpProfessional2({
     });
   }
 
-  const [state, setState] = useState("");
-  const [city, setCity] = useState("");
-  const [cep, setCep] = useState("");
-  const [neighborhood, setNeighborhood] = useState("");
-  const [street, setStreet] = useState("");
-  const [numberHome, setNumberHome] = useState("");
-  const [complement, setComplement] = useState("");
+
+   const fetchCEPData = async () => {
+    if (cep.length === 8) {
+      const data = await SearchCEP(cep);
+      if (data) {
+        setState(data.uf);
+        setCity(data.localidade);
+        setNeighborhood(data.bairro);
+        setStreet(data.logradouro);
+      }
+    }
+  };
+
 
   return (
     <Screen>
@@ -56,6 +73,7 @@ export function SignUpProfessional2({
           keyboardType="numeric"
           onChangeText={setCep}
           value={cep}
+          onBlur={fetchCEPData}
         />
         <Input
           name="state"
