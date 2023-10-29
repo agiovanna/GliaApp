@@ -1,12 +1,9 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import {SignUpProfessional2 as professionalAdress } from "@screens/Professional/SignUp/SignUpSecondStep";
-import { SignUpProfessional3 as professionalBusiness } from "@screens/Professional/SignUp/SignUpThirdStep";
-import { SignUpProfessional1 as professionalData } from "@screens/Professional/SignUp/SignUpFirstStep";
-import { SignUpProfessional4 as professionalPassword } from "@screens/Professional/SignUp/SignUpFourthStep";
-import { professionalValidation } from "../screens/createProfessional/emailValidation";
-import { clientData } from "../screens/createClient/personalData";
-import {clientUser} from "../screens/createClient/user";
-import {clientValidation} from "../screens/createClient/emailValidation";
+import {SignUpProfessional2 } from "src/screens/Professional/SignUp/SignUpSecondStep";
+import { SignUpProfessional3 } from "src/screens/Professional/SignUp/SignUpThirdStep";
+import { SignUpProfessional1 } from "src/screens/Professional/SignUp/SignUpFirstStep";
+import { SignUpProfessional4} from "src/screens/Professional/SignUp/SignUpFourthStep";
+import { SignUpProfessional5 } from "src/screens/Professional/SignUp/SignUpFifthStep";
 
 
 const { Navigator, Screen } = createNativeStackNavigator();
@@ -17,45 +14,31 @@ export function AppRoutes() {
 
             {/* professional screens */}
             <Screen
-                name='professionalData'
-                component={professionalData}
+                name='SignUpProfessional1'
+                component={SignUpProfessional1}
             />
 
             <Screen
-                name='professionalAdress'
-                component={professionalAdress}
+                name='SignUpProfessional2'
+                component={SignUpProfessional2}
             />
 
             <Screen
-                name='business'
-                component={professionalBusiness}
+                name='SignUpProfessional3'
+                component={SignUpProfessional3}
             />
 
             <Screen
-                name='professionalPassword'
-                component={professionalPassword}
+                name='SignUpProfessional4'
+                component={SignUpProfessional4}
             />
 
             <Screen
-                name='professionalValidation'
-                component={professionalValidation}
+                name='SignUpProfessional5'
+                component={SignUpProfessional5}
             />
 
             {/* client screens */}
-            <Screen
-                name='clientData'
-                component={clientData}
-            />
-
-            <Screen
-                name='clientUser'
-                component={clientUser}
-            />
-
-            <Screen
-                name='clientValidation'
-                component={clientValidation}
-            />
         </Navigator>
     );
 }
