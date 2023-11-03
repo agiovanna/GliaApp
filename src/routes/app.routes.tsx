@@ -1,4 +1,6 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
+import {Map} from 'src/utils/Map'
 import {SignUpProfessional2 } from "src/screens/Professional/SignUp/SignUpSecondStep";
 import { SignUpProfessional3 } from "src/screens/Professional/SignUp/SignUpThirdStep";
 import { SignUpProfessional1 } from "src/screens/Professional/SignUp/SignUpFirstStep";
@@ -13,6 +15,12 @@ export function AppRoutes() {
         <Navigator screenOptions={{ headerShown: false }}>
 
             {/* professional screens */}
+
+            <Screen
+                name='Map'
+                component={Map}
+            />
+
             <Screen
                 name='SignUpProfessional1'
                 component={SignUpProfessional1}

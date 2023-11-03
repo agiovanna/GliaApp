@@ -1,7 +1,8 @@
 import React from 'react-native';
-import {RectButtonProps} from 'react-native-gesture-handler';
+import { RectButtonProps } from 'react-native-gesture-handler';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-import {ButtonT, Title, Load, TypeProps} from './styles';
+import { ButtonT, Title, Load, TypeProps } from './styles';
 
 type Props = RectButtonProps & {
     title: string;
@@ -9,10 +10,12 @@ type Props = RectButtonProps & {
     isLoading?: boolean;
 }
 
-export function Button({title, type = 'primary', isLoading = false, ...rest}: Props){
+export function Button({ title, type = 'primary', isLoading = false, ...rest }: Props) {
     return (
-        <ButtonT type={type} enabled={!isLoading} {...rest}>
-            { isLoading ? <Load/> : <Title> {title} </Title>}
-        </ButtonT>
+        <GestureHandlerRootView>
+            <ButtonT type={type} enabled={!isLoading} {...rest}>
+                {isLoading ? <Load /> : <Title> {title} </Title>}
+            </ButtonT>
+        </GestureHandlerRootView>
     );
 }

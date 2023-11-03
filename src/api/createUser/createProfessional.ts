@@ -18,7 +18,6 @@ export async function createUserProfessional(
     complement: string,
     email: string,
     password: string,
-    
 ) {
     try {
         await api.post('/createProfessional', {

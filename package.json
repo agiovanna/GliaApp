@@ -37,6 +37,7 @@
     "react-native-linear-gradient": "^2.8.3",
     "react-native-maps": "1.7.1",
     "react-native-web": "~0.19.6",
+    "socket.io-client": "^4.7.2",
     "styled-components": "^5.3.11"
   },
   "devDependencies": {
