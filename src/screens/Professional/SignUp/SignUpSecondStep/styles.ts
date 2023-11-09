@@ -17,7 +17,7 @@ export const Container = styled.View`
 
 export const SubTitle = styled.Text`
     font-size: 18px;
-    align-self: self-start;
+    align-self: flex-start;
     margin-bottom: 25px ;
     font-weight: 600;
     margin-top: 25px;

@@ -74,7 +74,7 @@ export function SignUpProfessional3({
           value={fantasyName}
         />
         <CheckBoxComponent title="Não possuo um negócio/empresa" />
-        <Button title="Continuar" type="terciary" onPress={DataBusiness} />{" "}
+        <Button title="Continuar" type="terciary" onPress={DataBusiness} />
       </Container>
     </Screen>
   );
