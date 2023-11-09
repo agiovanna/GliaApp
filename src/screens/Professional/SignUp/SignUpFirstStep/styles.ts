@@ -31,7 +31,7 @@ export const Content = styled.ScrollView.attrs({
 
 export const Title = styled.Text`
   font-size: 32px;
-  align-self: self-start;
+  align-self: flex-start;
   margin-bottom: 45px;
   font-weight: bold;
   margin-top: 25px;
