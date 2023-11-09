@@ -117,7 +117,7 @@ export function SignUpProfessional2({
           onChangeText={setComplement}
           value={complement}
         />
-        <Button title="Continuar" type="terciary" onPress={DataAdress} />{" "}
+        <Button title="Continuar" type="terciary" onPress={DataAdress} />
       </Container>
     </Screen>
   );
