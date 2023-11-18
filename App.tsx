@@ -8,20 +8,14 @@ import { Home } from 'src/screens/Client/Home/index';
 import { SignUpProfessional2 } from 'src/screens/Professional/SignUp/SignUpSecondStep';
 import { SignUpProfessional3 } from 'src/screens/Professional/SignUp/SignUpThirdStep';
 import { SignUpProfessional4 } from 'src/screens/Professional/SignUp/SignUpFourthStep';
-
-import { Routes } from 'src/routes/index';
+import { NavigationContainer } from '@react-navigation/native';
+import { AppRoutes } from 'src/routes/app.routes';
 
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      {/*<SignIn/>*/}
-      {/*<CreateClient/>*/}
-      {/*<Home/>*/}
-      {/*<SignUpProfessional4/>*/}
-      {/*<SignUpProfessional1/>*/}
-      <Routes />
+      <AppRoutes />
     </ThemeProvider>
-
   );
 }
 
