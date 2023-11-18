@@ -15,6 +15,7 @@ import { Alert } from "react-native";
     }
 
     Alert.alert('Informação','E-mail verificado com sucesso!');
+
 }
 
 export default verificationEmail;

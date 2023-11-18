@@ -7,7 +7,7 @@ import verificationEmail  from "src/utils/emailValidation/verifyValidation";
 import { Button } from "src/components/Button";
 import { Header } from "src/components/Header";
 
-export function SignUpProfessional5 ({route}: {route: any}){
+export function SignUpProfessional5 ({route, navigation}: {route: any, navigation: any}){
     async function Verification() {
 
         verificationEmail;
@@ -78,7 +78,9 @@ export function SignUpProfessional5 ({route}: {route: any}){
             <Title> VERIFIQUE SEU EMAIL!</ Title>
             <SubTitle> Para continuar, verifique o link de verificação enviado para seu email. Aperte o botão "Verificar" após isso.  </SubTitle>
 
-            <Button type="terciary" title="Verificar" onPress={Verification}/>
+            <Button type="terciary" title="Verificar" onPress={ () => {
+                navigation.navigate('Tela01');
+            }}/>
         </Container>
         </Content>
         </Screen>
