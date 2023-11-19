@@ -10,6 +10,10 @@ import { Tela01 } from 'src/screens/TelasTeste/tela01';
 import { Tela02 } from 'src/screens/TelasTeste/tela02';
 import { Tela03 } from 'src/screens/TelasTeste/tela03';
 import { Tela04 } from 'src/screens/TelasTeste/tela04';
+import ProfileProfessional from '../screens/Profile/professional';
+import ProfileClient from '../screens/Profile/client';
+import AddProfileProfessional from '../screens/AddProfile/professional';
+import AddProfileClient from '../screens/AddProfile/client';
 
 
 const Tab = createNativeStackNavigator();
@@ -58,6 +62,29 @@ export function AppRoutes() {
                     component={Map}
                 />
 
+                {/* perfil de cliente e profissional */}
+
+                <Tab.Screen
+                    name='addProfileProfessional'
+                    component={AddProfileProfessional}
+                />
+  
+                <Tab.Screen
+                    name='addProfileClient'
+                    component={AddProfileClient}
+                />
+
+                <Tab.Screen
+                    name='profileProfessional'
+                    component={ProfileProfessional}
+                />
+
+                <Tab.Screen
+                    name='profileClient'
+                    component={ProfileClient}
+                />
+
+
                 {/* client screens */}
 
                 {/*<Tab.Screen
@@ -79,6 +106,7 @@ export function AppRoutes() {
                 name='tela04'
                 component={Tela04}
             />*/}
+
             </Tab.Navigator>
         </NavigationContainer>
     );
