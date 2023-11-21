@@ -10,10 +10,10 @@ import { Tela01 } from 'src/screens/TelasTeste/tela01';
 import { Tela02 } from 'src/screens/TelasTeste/tela02';
 import { Tela03 } from 'src/screens/TelasTeste/tela03';
 import { Tela04 } from 'src/screens/TelasTeste/tela04';
-import ProfileProfessional from '../screens/Profile/professional';
-import ProfileClient from '../screens/Profile/client';
-import AddProfileProfessional from '../screens/AddProfile/professional';
-import AddProfileClient from '../screens/AddProfile/client';
+import ProfileProfessional from '../screens/Professional/Profile';
+import ProfileClient from '../screens/Client/Profile';
+import AddProfileProfessional from '../screens/Professional/AddProfile';
+import AddProfileClient from '../screens/Client/AddProfile';
 
 
 const Tab = createNativeStackNavigator();

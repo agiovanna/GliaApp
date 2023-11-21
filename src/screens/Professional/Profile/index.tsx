@@ -1,14 +1,14 @@
 import { StyleSheet, View } from "react-native";
 
-import HeaderProfessional from "@screens/Header/professional";
-import BarNavigator from '../../Navigators/BarNavigator';
+import HeaderProfessional from "@screens/Professional/Header";
+// import BarNavigator from '../../Navigators/BarNavigator';
 
 
 function ProfileProfessional() {
     return(
          <View style={styles.container}>
             <HeaderProfessional />
-            <BarNavigator />
+            {/* <BarNavigator /> */}
          </View>
     );
 }
