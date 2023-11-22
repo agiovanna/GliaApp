@@ -12,8 +12,8 @@ import { Tela03 } from 'src/screens/TelasTeste/tela03';
 import { Tela04 } from 'src/screens/TelasTeste/tela04';
 import ProfileProfessional from '../screens/Professional/Profile';
 import ProfileClient from '../screens/Client/Profile';
-import AddProfileProfessional from '../screens/Professional/AddProfile';
-import AddProfileClient from '../screens/Client/AddProfile';
+import {AddProfileProfessional} from '../screens/Professional/AddProfile';
+import {AddProfileClient} from '../screens/Client/AddProfile';
 
 
 const Tab = createNativeStackNavigator();

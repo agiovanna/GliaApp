@@ -1,6 +1,6 @@
 import { StyleSheet, View } from "react-native";
 
-import HeaderClient from "@screens/Client/Header";
+import HeaderClient from "src/screens/Client/Header";
 
 
 function ProfileClient() {

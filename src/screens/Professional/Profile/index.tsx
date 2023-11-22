@@ -1,6 +1,6 @@
 import { StyleSheet, View } from "react-native";
 
-import HeaderProfessional from "@screens/Professional/Header";
+import HeaderProfessional from "src/screens/Professional/Header";
 // import BarNavigator from '../../Navigators/BarNavigator';
 
 
