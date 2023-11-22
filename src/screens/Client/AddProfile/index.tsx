@@ -6,23 +6,19 @@ import { Entypo } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 
-import BottomSheet from '@gorhom/bottom-sheet';
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 import { storage } from '../../../api/firebase/firebaseConfig'
-
-import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
 
 import { updateImgClient } from '../../../api/updateUser/updateImgClient'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
-function AddProfileClient({ navigation }: {
+export function AddProfileClient({ navigation }: {
     navigation: any;
 }): React.JSX.Element {
 
     const [image, setImage] = useState('');
     const { height } = Dimensions.get('window');
-    const bottomSheetRef = useRef<BottomSheet>(null);
 
     const typeUser = "Cliente";
 
@@ -120,9 +116,7 @@ function AddProfileClient({ navigation }: {
                 {image &&
                     < Image source={{ uri: image }} />
                 }
-                <TouchableOpacity onPress={() => {
-                    bottomSheetRef.current?.expand();
-                }}>
+                <TouchableOpacity>
                     <Entypo name="camera" size={40} color="#808080" />
                 </TouchableOpacity>
             </View>
@@ -135,12 +129,6 @@ function AddProfileClient({ navigation }: {
                 <Text>Entrar</Text>
             </TouchableOpacity>
 
-
-            <BottomSheet
-                ref={bottomSheetRef}
-                index={0}
-                snapPoints={[1, height - 750]}
-            >
                 <View>
                     <View style={{ width: "auto", height: "auto", flexDirection: "row", gap: 50, }}>
                         <TouchableOpacity onPress={AcessCamera}>
@@ -153,10 +141,7 @@ function AddProfileClient({ navigation }: {
                     </View>
                 </View>
 
-            </BottomSheet>
-
         </View>
     );
 }
 
-export default gestureHandlerRootHOC(AddProfileClient);
